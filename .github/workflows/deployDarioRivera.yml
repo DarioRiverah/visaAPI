@@ -1,4 +1,4 @@
-name: Azure Continuous Delivery yaml
+name: Azure Continuous Delivery Dario
 on:
   workflow_dispatch:
     inputs:
