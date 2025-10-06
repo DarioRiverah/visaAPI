@@ -36,7 +36,7 @@ jobs:
         with:
           login-server: ${{ secrets.ACR_NAME_NICOLAS }}.azurecr.io
           username: ${{ secrets.ACR_NAME_NICOLAS }}
-          password: ${{ secrets.ACR_PASSWORD }}
+          password: ${{ secrets.ACR_PASSWORD_NICOLAS }}
 
       - name: Build and Push to ACR
         uses: docker/build-push-action@v6
