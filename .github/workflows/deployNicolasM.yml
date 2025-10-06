@@ -1,4 +1,4 @@
-name: Azure Continuous Delivery Nicolas Monroy
+name: Azure Continuous Delivery Nicolas 
 
 on:
   workflow_dispatch:
