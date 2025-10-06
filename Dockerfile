@@ -20,7 +20,7 @@ RUN pip install --upgrade pip && pip install -r /app/requirements.txt
 COPY app /app/app
 
 # Puerto por defecto de FastAPI/Uvicorn
-EXPOSE 8000
+EXPOSE 80
 
 # Comando de arranque
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "443"]
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "80"]
