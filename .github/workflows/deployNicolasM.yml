@@ -20,7 +20,7 @@ on:
         required: true
 
 env:
-  IMAGE_URL: ${{ secrets.ACR_NICOLAS }}.azurecr.io/${{ github.event.inputs.IMAGE_REPOSITORY }}:${{ github.event.inputs.IMAGE_TAG }}
+  IMAGE_URL: ${{ secrets.ACR_NAME_NICOLAS }}.azurecr.io/${{ github.event.inputs.IMAGE_REPOSITORY }}:${{ github.event.inputs.IMAGE_TAG }}
 
 jobs:
   build-and-push-image:
@@ -34,8 +34,8 @@ jobs:
       - name: Docker Login
         uses: azure/docker-login@v1
         with:
-          login-server: ${{ secrets.ACR_NICOLAS }}.azurecr.io
-          username: ${{ secrets.ACR_NICOLAS }}
+          login-server: ${{ secrets.ACR_NAME_NICOLAS }}.azurecr.io
+          username: ${{ secrets.ACR_NAME_NICOLAS }}
           password: ${{ secrets.ACR_PASSWORD }}
 
       - name: Build and Push to ACR
